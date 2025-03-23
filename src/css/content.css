@@ -1,28 +1,109 @@
-.logo{
+@font-face {
+    font-family: "Myriad-Pro";
+    src: url('../font/MYRIADPRO-BOLD.OTF') format("truetype");
+}
+
+@font-face {
+    font-family: "Gladolia";
+    src: url('../font/GladoliaDEMO-Regular.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "Party";
+    src: url('../font/Party_Vibes.otf') format("truetype");
+}
+
+.logo {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 45px;
 }
 
-.logo img{
+.logo img {
     width: 190px;
+    z-index: 99
+}
+
+.info {
+    width: calc(100% - 42px);
+    padding: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: rgb(var(--blue))
+}
+
+.convite {
+    font-family: "Myriad-Pro";
+    font-weight: bold;
+}
+
+.nome {
+    font-family: "Gladolia";
+    font-size: 37px;
+    margin-top: 19px;
+}
+
+.idade {
+    font-family: "Party";
+    font-size: 32px;
+    margin-top: -20px;
 }
 
 @media (min-width: 650px) {
-    .logo{
+    .logo {
         margin-top: 68px
     }
-    .logo img{
+
+    .logo img {
         width: 260px;
+    }
+
+    .convite {
+        font-size: 20px
+    }
+
+    .nome {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .idade {
+        font-family: "Party";
+        font-size: 43px;
+        margin-top: -25px;
     }
 }
 
 @media (min-width: 700px) {
-    .logo{
+    .logo {
         margin-top: 68px
     }
-    .logo img{
+
+    .logo img {
         width: 281px;
+    }
+
+    .convite {
+        font-size: 20px
+    }
+
+    .nome {
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .idade {
+        font-family: "Party";
+        font-size: 43px;
+        margin-top: -25px;
     }
 }

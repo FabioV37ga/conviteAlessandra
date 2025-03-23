@@ -17,19 +17,19 @@
 #blue {
     z-index: 3;
     background: rgb(59 75 97);
-    animation: throwDiagonally 2s forwards;
+    animation: throwDiagonally 1s forwards;
 }
 
 #red {
     z-index: 2;
     background: rgb(199 87 66);
-    animation: throwDiagonally 2.2s forwards;
+    animation: throwDiagonally 1.2s forwards;
 }
 
 #cyan {
     z-index: 1;
     background: rgb(127 151 145);
-    animation: throwDiagonally 2.4s forwards;
+    animation: throwDiagonally 1.4s forwards;
 }
 
 @keyframes throwDiagonally {

@@ -41,6 +41,7 @@ body {
 }
 
 .main-container--content {
+    background-blend-mode: normal;
     border-radius: inherit;
     background-image: url('../img/background.png');
     background-size: contain;

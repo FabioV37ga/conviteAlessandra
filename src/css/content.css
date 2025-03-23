@@ -58,6 +58,18 @@
     margin-top: -20px;
 }
 
+.endereco {
+    margin-top: 30px
+}
+
+.endereco,
+.horario {
+    color: rgb(var(--red)) !important;
+    font-family: "Party";
+    font-size: 15px;
+    font-weight: bold;
+}
+
 @media (min-width: 650px) {
     .logo {
         margin-top: 68px
@@ -80,6 +92,11 @@
         font-family: "Party";
         font-size: 43px;
         margin-top: -25px;
+    }
+
+    .endereco,
+    .horario {
+        font-size: 23px
     }
 }
 
@@ -105,5 +122,10 @@
         font-family: "Party";
         font-size: 43px;
         margin-top: -25px;
+    }
+
+    .endereco,
+    .horario {
+        font-size: 23px
     }
 }

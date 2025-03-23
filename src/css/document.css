@@ -12,6 +12,10 @@
 
 html{
     overflow: hidden;
+    color-scheme: light only;
+    forced-color-adjust: none;
+    filter: none !important;
+    backdrop-filter: none !important;
 }
 
 body {

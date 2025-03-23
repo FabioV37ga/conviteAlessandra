@@ -1,0 +1,28 @@
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.logo img{
+    width: 190px;
+}
+
+@media (min-width: 650px) {
+    .logo{
+        margin-top: 68px
+    }
+    .logo img{
+        width: 260px;
+    }
+}
+
+@media (min-width: 700px) {
+    .logo{
+        margin-top: 68px
+    }
+    .logo img{
+        width: 281px;
+    }
+}

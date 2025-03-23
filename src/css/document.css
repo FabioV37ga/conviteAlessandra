@@ -3,6 +3,8 @@
     --lightBlue: 90 114 147;
     --red: 207 92 73;
     --white: 246 237 228;
+    color-scheme: light !important;
+    forced-color-adjust: none !important;
 }
 
 

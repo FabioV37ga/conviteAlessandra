@@ -70,6 +70,22 @@
     font-weight: bold;
 }
 
+.button-container {
+    width: 180px;
+    height: 60px;
+    /* background: yellow; */
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao {
+    height: 100%;
+    width: 60px;
+    background: rgb(var(--red));
+    border-radius: 100%
+}
+
 @media (min-width: 650px) {
     .logo {
         margin-top: 68px
@@ -96,7 +112,17 @@
 
     .endereco,
     .horario {
-        font-size: 23px
+        font-size: 21px
+    }
+
+    .button-container {
+        width: 250px;
+        margin-top: 54px;
+        height: 80px;
+    }
+
+    .botao {
+        width: 80px
     }
 }
 
@@ -127,5 +153,15 @@
     .endereco,
     .horario {
         font-size: 23px
+    }
+
+    .button-container {
+        width: 250px;
+        margin-top: 54px;
+        height: 80px;
+    }
+
+    .botao {
+        width: 80px
     }
 }

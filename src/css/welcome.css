@@ -1,17 +1,17 @@
 .window {
     position: absolute;
-    width: 10000px;
-    height: 10000px;
-    rotate: 45deg;
+
     /* background: purple; */
 }
 
 #blue,
 #red,
 #cyan {
-    height: 100%;
-    width: 100%;
+    width: 10000px;
+    height: 10000px;
+    rotate: 45deg;
     position: absolute;
+    left: -5000px;
 }
 
 #blue {
@@ -40,6 +40,68 @@
 .throwOut2 {
     animation: throwDiagonally 1.4s forwards;
 }
+
+.window .content{
+    text-align: center;
+    position: absolute;
+    z-index: 30;
+    top: 343px;
+    width: 380px;
+    left: -188px;
+    color: rgb(var(--white));
+    font-family: "Myriad-Pro";
+}
+
+.text-titulo{
+    font-family: "Party" !important;
+}
+
+.welcome-close{
+    padding: 10px 10px;
+    background: rgb(var(--lightBlue));
+    color: rgb(var(--white));
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.fadeout{
+    animation: fadeout forwards .8s
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 100%
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+@media (max-width: 380px){
+    .window .content{
+        zoom: 70%;
+    }
+}
+
+@media (max-width: 449px){
+    .window .content{
+        zoom: 80%;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 699px){
+    .window .content{
+        top: 395px
+    }
+}
+
+@media (min-width: 700px){
+    .window .content{
+        top: 381px
+    }
+}
+
 
 @keyframes throwDiagonally {
     100% {

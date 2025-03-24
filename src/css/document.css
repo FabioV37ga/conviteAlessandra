@@ -1,4 +1,4 @@
-:root{
+:root {
     --blue: 56 66 91;
     --lightBlue: 90 114 147;
     --red: 207 92 73;
@@ -7,12 +7,15 @@
     forced-color-adjust: none !important;
 }
 
+a {
+    cursor: pointer;
+}
 
 * {
     margin: 0;
 }
 
-html{
+html {
     overflow: hidden;
     color-scheme: light only;
     forced-color-adjust: none;
@@ -57,8 +60,8 @@ body {
     /* background-color: green; */
 }
 
-@media (max-width: 380px){
-    .main-container{
+@media (max-width: 380px) {
+    .main-container {
         zoom: 70%
     }
 }

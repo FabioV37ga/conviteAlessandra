@@ -1,0 +1,210 @@
+.main-container {
+    perspective: 1000px;
+    position: relative;
+}
+
+.borderFade {
+    animation: borderFade .8s linear;
+}
+
+@keyframes borderFade {
+    0% {
+        -webkit-box-shadow: 0px 0px 38px 18px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 38px 18px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 38px 18px rgba(0, 0, 0, 0.75);
+    }
+
+    10% {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    90% {
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        -webkit-box-shadow: 0px 0px 38px 18px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 38px 18px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 38px 18px rgba(0, 0, 0, 0.75);
+    }
+}
+
+.main-container--content {
+    transition: transform .8s;
+    transform-style: preserve-3d;
+}
+
+.main-container--content>* {
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.showBack {
+    transform: rotateY(180deg);
+
+}
+
+.dresscode-backface {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 0;
+    border-radius: 12px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-image: url(../img/background-dresscode.png);
+    transform: rotateY(180deg);
+}
+
+.dresscode-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.dresscode-title {
+    font-family: 'Gladolia';
+    margin-top: 56px;
+    font-size: 48px;
+    color: rgb(var(--white));
+    font-weight: 100;
+}
+
+.gallery-container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 69%;
+    background: rgb(64 12 200);
+    width: 86%;
+    border-radius: 13px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 11px;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 41%;
+    background: blue;
+    height: 193px;
+    margin: 8px 0 8px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 650px) {
+    .image-container {
+        height: 288px;
+    }
+
+    .dresscode-overlay--image-container {
+        width: 378px !important;
+    }
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery-container::-webkit-scrollbar {
+    width: 5px;
+    /* border-radius: 4px; */
+}
+
+.gallery-container::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background: transparent;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+    background: rgb(176, 70, 51);
+    border-radius: 4px;
+}
+
+.dresscode-overlay {
+    z-index: 3000;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    border-radius: 12px;
+    animation: dresscodeOverlayFade .3s linear;
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@keyframes dresscodeOverlayFade {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.dresscode-overlay--image-container {
+    width: 244px;
+    /* height: 400px; */
+}
+
+.dresscode-overlay--image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.dresscode-overlay--back-container {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 51px;
+    height: 90px;
+}
+
+.backface-back {
+    bottom: 19px;
+    position: absolute;
+    padding: 5px 21px;
+    font-size: 16px;
+    background: rgb(var(--white));
+    font-family: 'Party';
+    border-radius: 10px;
+    font-weight: 100;
+    color: black;
+}
+
+@media (min-width: 650px) {
+    .backface-back {
+        bottom: 30px;
+        padding: 8px 24px;
+        font-size: 23px;
+    }
+}

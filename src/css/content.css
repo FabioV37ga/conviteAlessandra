@@ -74,7 +74,7 @@
     width: 180px;
     height: 60px;
     /* background: yellow; */
-    margin-top: 22px;
+    margin-top: 17px;
     display: flex;
     justify-content: space-around;
 }
@@ -83,7 +83,29 @@
     height: 100%;
     width: 60px;
     background: rgb(var(--red));
-    border-radius: 100%
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+a.botao.dresscode img {
+    width: 34px;
+}
+
+a.botao.presenca i {
+    font-size: 33px;
+    color: rgb(var(--white));
+}
+
+span.legenda {
+    position: absolute;
+    top: 62px;
+    text-align: center;
+    font-size: 11px;
+    color: rgb(var(--red));
+    font-family: "Myriad-Pro";
 }
 
 @media (min-width: 650px) {
@@ -124,6 +146,11 @@
     .botao {
         width: 80px
     }
+
+    span.legenda {
+        top: 83px;
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 700px) {
@@ -163,5 +190,10 @@
 
     .botao {
         width: 80px
+    }
+
+    span.legenda {
+        top: 83px;
+        font-size: 18px;
     }
 }

@@ -3,6 +3,7 @@
     --lightBlue: 90 114 147;
     --red: 207 92 73;
     --white: 246 237 228;
+    --pinky: 246 215 186;
     color-scheme: light !important;
     forced-color-adjust: none !important;
 }
@@ -50,6 +51,7 @@ body {
 }
 
 .main-container--content {
+    position: relative;
     background-blend-mode: normal;
     border-radius: inherit;
     background-image: url('../img/background.png');

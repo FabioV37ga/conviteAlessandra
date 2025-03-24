@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/css/welcome.css">
     <link rel="stylesheet" href="src/css/document.css">
+    <link rel="stylesheet" href="src/css/janelas.css">
     <link rel="stylesheet" href="src/css/content.css">
 </head>
 
@@ -66,8 +67,50 @@
                     </a>
                 </div>
             </section>
+
+            <div class="presenca-append append" style="display: none">
+
+                <div class="presenca-append-overlay" style="display: none">
+                    <div class="overlay-content">
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        <span>Presença(s) confirmada(s)</span>
+                    </div>
+                </div>
+
+                <!-- Header -->
+                <div class="append-header">
+                    <h1>Confirmar presença</h1>
+                    <a class="presenca-close append-header-close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- Conteúdo -->
+                <div class="presenca-append-content">
+                    <div class="presenca-append-form">
+                        <div class="form-items">
+                            <div class="form-item-container base-item">
+                                <input type="text" class="presenca-append-form-item" placeholder="Nome + Sobrenome">
+                            </div>
+                            
+                            <div class="add-container">
+                                <a class="form-add">+</a>
+                                <span class="form-add-desc">Adicionar outro convidado</span>
+                            </div>
+                        </div>
+
+                        <a class="form-confirm">Confirmar</a>
+                    </div>
+                    <div class="presenca-pointer pointer">►</div>
+                </div>
+            </div>
+
         </section>
     </section>
+    <script src="src/js/jquery.js"></script>
+    <script src=" src/js/presenca-form.js"></script>
+    <script src=" src/js/presenca-items.js"></script>
+    <script src=" src/js/presenca.js"></script>
     <script src=" src/js/welcome.js"></script>
 </body>
 

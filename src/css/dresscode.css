@@ -138,7 +138,7 @@
 }
 
 .gallery-container::-webkit-scrollbar-thumb {
-    background: rgb(176, 70, 51);
+    background: rgb(50, 1, 141);
     border-radius: 4px;
 }
 
@@ -201,10 +201,21 @@
     color: black;
 }
 
+.dresscode-note{
+    font-size: 12px;
+    font-weight: lighter;
+    color: white;
+    font-family: 'Myriad-Pro';
+}
+
 @media (min-width: 650px) {
     .backface-back {
         bottom: 30px;
         padding: 8px 24px;
         font-size: 23px;
     }
+    .dresscode-note{
+        font-size: 16px;
+    }
 }
+

@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px
+}
+
+.git-repo {
+    font-size: 36px;
+    color: white;
+    background: black;
+    border-radius: 100%;
+    padding: 0px 6px;
+}

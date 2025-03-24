@@ -58,7 +58,7 @@
 
 .welcome-close{
     padding: 10px 10px;
-    background: rgb(var(--lightBlue));
+    background: rgb(var(--red));
     color: rgb(var(--white));
     text-decoration: none;
     border-radius: 5px;

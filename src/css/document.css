@@ -35,7 +35,6 @@ body {
     overflow: hidden;
     background-position: center;
     align-items: center;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 

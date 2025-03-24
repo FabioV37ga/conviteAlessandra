@@ -153,7 +153,7 @@ span.legenda {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px){
     .logo {
         margin-top: 68px
     }
